@@ -1,0 +1,11 @@
+{
+  "name": "suitori",
+  "version": "0.0.1",
+  "main": "index.js",
+  "author": "ryo-a",
+  "license": "MIT",
+  "dependencies": {
+    "electron": "^1.7.10",
+    "iconv-lite": "^0.4.19"
+  }
+}
