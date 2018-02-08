@@ -2,12 +2,13 @@
 const electron = require('electron');
 const app = electron.app;
 const BrowserWindow = electron.BrowserWindow;
+const { ipcMain } = require('electron');
 
 const path = require('path');
-const fs = require('fs');
+const fs = require('fs-extra');
 const url = require('url');
-const { ipcMain } = require('electron')
-var iconv = require('iconv-lite');
+const unzip = require('unzip');
+const iconv = require('iconv-lite');
 
 
 console.log(app.getPath('desktop'));
