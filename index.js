@@ -59,10 +59,11 @@ ipcMain.on('filename', (event, droppedFile) => {
 
     //ファイル名読み込む→コピーする→unzipする→
     // Excelなら ファイル名\xl\media 内に画像がある
-    fs.createReadStream(droppedFile.path).pipe(fs.createWriteStream(app.getPath('desktop') + '/' + droppedFile.name, () => {
-      console.log("");
-    }
-    ));
+    fs.copy(droppedFile.path, app.getPath('desktop') + '/' + droppedFile.name)
+      .then(() => console.log('complete'))
+      .catch(err => console.error(err))
+
+
   }
 
 
