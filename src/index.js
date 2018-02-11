@@ -18,8 +18,8 @@ function createWindow() {
     width: 350,
     height: 350,
     useContentSize: true,
-    titleBarStyle: 'hidden',
-    frame: false,
+    //titleBarStyle: 'hidden',
+    //frame: false,
     maximizable: false
   });
 
@@ -86,5 +86,5 @@ ipcMain.on('filename', (event, droppedFile) => {
       )
       .catch(err => console.error(err))
   }
-  //event.returnValue = '';
+  event.returnValue = '';
 })
