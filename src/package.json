@@ -9,5 +9,8 @@
     "fs-extra": "^5.0.0",
     "iconv-lite": "^0.4.19",
     "unzip": "^0.1.11"
+  },
+  "scripts":{
+    "start": ".\\node_modules\\.bin\\electron index.js"
   }
 }
