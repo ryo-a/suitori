@@ -10,7 +10,9 @@
     "iconv-lite": "^0.4.19",
     "unzip": "^0.1.11"
   },
-  "scripts":{
-    "start": ".\\node_modules\\.bin\\electron index.js"
+  "scripts": {
+    "start": ".\\node_modules\\.bin\\electron index.js",
+    "build-windows": "electron-packager . --overwrite --platform=win32 --arch=ia32 --out=../dist --icon=../res/suitori_windows.ico",
+    "build-mac":"electron-packager . --overwrite --platform=darwin --arch=x64 --out=../dist --icon=../res/suitori_mac.icns"
   }
 }
