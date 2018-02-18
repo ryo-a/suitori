@@ -157,6 +157,7 @@ nav>ul>li>a {
   border: medium solid #FFF;
   text-decoration: none;
   transition: 0.5s;
+  font-size:0.8em;
 }
 
 .border-white {
